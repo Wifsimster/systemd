@@ -1,0 +1,12 @@
+[Unit]
+Description=Transmission BT Client headless
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/transmission-daemon -f --log-error --config-dir /var/lib/transmission-daemon/.config/transmission-daemon/
+ExecReload=/bin/kill -s HUP $MAINPID
+
+[Install]
+WantedBy=multi-user.target
