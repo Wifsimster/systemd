@@ -1,5 +1,4 @@
 # How to install Plex Media Server on Debian Jessie
-
 nano /etc/apt/sources.list
   deb http://shell.ninthgate.se/packages/debian wheezy main
 wget http://shell.ninthgate.se/packages/shell-ninthgate-se-keyring.key
@@ -10,3 +9,11 @@ systemctl enable plexmediaserver.service
 
 # This is it !
 # URL : http:192.168.0.x:324000/web/index.html
+
+# Ho to add Plex Trakt Scrobbler
+cd  /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
+apt-get install git-core
+git clone https://github.com/trakt/Plex-Trakt-Scrobbler
+mv /Plex-Trajt-Scrobbler/Trakttv.bundle /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
+rm -r Plex-Trakt-Scrobbler
+systemctl restart plexmediaserver.service
