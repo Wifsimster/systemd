@@ -7,6 +7,7 @@ Type=simple
 User=root
 ExecStart=/usr/bin/transmission-daemon -f --log-error --config-dir /var/lib/transmission-daemon/.config/transmission-daemon/
 ExecReload=/bin/kill -s HUP $MAINPID
+Restart=always
 
 [Install]
 WantedBy=multi-user.target

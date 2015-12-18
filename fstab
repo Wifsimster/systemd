@@ -1,0 +1,5 @@
+//192.168.0.22/Downloads        /mnt/downloads          cifs    rw,credentials=/etc/cifspasswd,x-systemd.automount  0       0
+//192.168.0.22/Incompletes      /mnt/incompletes        cifs    rw,credentials=/etc/cifspasswd,x-systemd.automount  0       0
+//192.168.0.22/Movies           /mnt/movies             cifs    rw,credentials=/etc/cifspasswd,x-systemd.automount  0       0
+//192.168.0.22/Musics           /mnt/musics             cifs    rw,credentials=/etc/cifspasswd,x-systemd.automount  0       0
+//192.168.0.22/TV_Shows         /mnt/tv_shows           cifs    rw,credentials=/etc/cifspasswd,x-systemd.automount  0       0
