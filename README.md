@@ -1,4 +1,4 @@
-# Installation First Kit for Raspberry Pie
+# Installation First Kit for Raspberry Pi
 
 ## Root password
 
