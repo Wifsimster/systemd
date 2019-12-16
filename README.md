@@ -3,14 +3,14 @@
 ## Root password
 
 <!-- Define a root password -->
-```shell
+```Shell
 $ sudo passwd root
 ```
 
 ## Add NAS directories
 
 <!-- Create NAS directories -->
-```
+```Shell
 cd mnt/
 mkdir downloads
 mkdir incompletes
@@ -21,17 +21,17 @@ mkdir photos
 ```
 
 <!-- Add permissions to new directories -->
-```
+```Shell
 chmod 777 *
 chown nobody:nogroup *
 ```
 
 <!-- Write fstab -->
-```
+```Shell
 nano etc/fstab
 ```
 
 <!-- Write fstab -->
-```
+```Shell
 nano etc/cifspasswd
 ```
