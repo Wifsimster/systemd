@@ -79,9 +79,11 @@ Access it with : http:192.168.0.x:324000/web/index.html
 
 ## How to add Plex Trakt Scrobbler
 
+```Shell
 cd  /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
 apt-get install git-core
 git clone https://github.com/trakt/Plex-Trakt-Scrobbler
 mv /Plex-Trajt-Scrobbler/Trakttv.bundle /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Plug-ins
 rm -r Plex-Trakt-Scrobbler
 systemctl restart plexmediaserver.service
+```
