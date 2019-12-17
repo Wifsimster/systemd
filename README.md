@@ -39,13 +39,13 @@ chown nobody:nogroup *
 Write fstab
 
 ```Shell
-nano etc/fstab
+nano /etc/fstab
 ```
 
 Write fstab
 
 ```Shell
-nano etc/cifspasswd
+nano /etc/cifspasswd
 ```
 
 ## How to install Plex Media Server on Debian Jessie
