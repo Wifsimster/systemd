@@ -8,6 +8,13 @@ Define a root password
 sudo passwd root
 ```
 
+## Update & updagrade
+
+```Shell
+apt-get update
+apt-get upgrade
+```
+
 ## Add NAS directories
 
 Create NAS directories
